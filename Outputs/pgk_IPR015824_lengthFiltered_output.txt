@@ -1,0 +1,14 @@
+Filtered sequence set: Inputs/pgk_IPR015824.txt
+
+Parameters used:
+Sequence length filtering threshold: 0.3
+
+Number of sequences in initial alignment: 17724
+
+Median sequence length: 397 residues
+Sequence length lower boundary: 278 residues
+Sequence length upper boundary: 516 residues
+
+Number of sequences in final alignment: 16743
+
+Wrote length filtered sequence set to: pgk_IPR015824_lengthFiltered.txt

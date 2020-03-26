@@ -1,0 +1,14 @@
+Determined consensus sequence for: Inputs/homeodomain_PF00046_curated.txt
+
+Parameters used:
+Method for removing insertions: 1
+
+>Consensus_sequence
+KRKRTRFTPEQLEELEKEFEKNPYPSREEREELAKELGLTERQVKVWFQNRRAKWKK
+
+MSA sequence entropy per residue: 2.519
+
+Wrote gap stripped alignment to: homeodomain_PF00046_curated_gapStrip.txt
+
+Wrote CSV of residue frequencies to: homeodomain_PF00046_curated_residueFrequencies.csv
+
