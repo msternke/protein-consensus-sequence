@@ -14,16 +14,17 @@
 Protein consensus sequence design has been shown to be a successful strategy for engineering highly stable proteins that retain their biological activities. A protein consensus sequences is composed of the most frequent residue at all positions in a multiple sequence alignment (MSA) of homologous protein sequences. All that is needed to design a protein consensus sequence is an MSA for the target protein family and basic coding scripts to determine residue frequencies at all positions in the MSA. Applying preprocessing steps to a sequence set can improve sequence alignment and the resulting consensus sequence. Here we have made available a script (length_filter.py) to assist in preprocessing a sequence set by filtering sequences by sequence length prior to sequence alignment, and a script (consensus.py) to determine residue frequencies at all positions in an MSA, filter residue insertions from the MSA, and determine a consensus sequence.
 
 ## Requirements
-Both scripts require Python3.6 or newer.
+Both scripts require Python3.6 or newer. Scripts were written using Python3.6 on a MacOSX (Unix) system.
 
 Both scripts require the following non-standard packages:    
     numpy  
     matplotlib
 
-These packages can be installed from the command line by running:
+These packages can be installed using pip from the command line by running:
 ```
 pip3 install numpy matplotlib
 ```
+For information on installing or using pip if necessary see: [pip](https://pip.pypa.io/en/stable/installing/).
 
 ## Installation
 To install protein-consensus-sequence, clone or download this repository to your local computer.
