@@ -100,7 +100,7 @@ cd <filepath_to_protein-consensus-sequence>/protein-consensus-sequence
 
 To use as an example, a previously curated MSA of homeodomains (HD) obtained from the Pfam database is in the Inputs folder. To run this example (using default parameters), run the following from the command line:
 ```
-./consensus.py -i Inputs/homeodomain_PF00046_curated.txt.txt
+./consensus.py -i Inputs/homeodomain_PF00046_curated.txt
 ```
 
 ### Command line options
