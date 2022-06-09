@@ -151,6 +151,7 @@ if __name__ == '__main__':
                 
     consensus_sequence = ''.join(consensus_sequence)
     print(f'Consensus sequence: {consensus_sequence}')
+    print("Sequence length:",len(consensus_sequence),"residues")
     print()
 
     #Removes positions with high gap frequencies from all sequences in alignment
@@ -220,12 +221,13 @@ if __name__ == '__main__':
     with open(f'{path}Outputs/{out_file_prefix}_consensus_output.txt', 'w', newline='') as f:
         f.write(f'Determined consensus sequence for: {args.i}\n\n')
         f.write('Parameters used:\n')
-        if consensus_choice ==  1:
+        if consensus_choice ==  '1':
             f.write(f'Method for removing insertions: {consensus_choice}\n')
             f.write(f'Gap frequency threshold: {threshold}\n\n')
         else:
             f.write(f'Method for removing insertions: {consensus_choice}\n\n')
         f.write(f'>Consensus_sequence\n{consensus_sequence}\n\n')
+        f.write(f'Sequence length: {len(consensus_sequence)} residues\n\n')
         f.write(f'MSA sequence entropy per residue: {np.mean(seq_entropies):.3f}\n\n')
         f.write(f'Wrote gap stripped alignment to: {out_file_prefix}_gapStrip.txt\n\n')
         f.write(f'Wrote CSV of residue frequencies to: {out_file_prefix}_residueFrequencies.csv\n\n')
